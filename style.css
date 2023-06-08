@@ -9,13 +9,17 @@ html{
     font-size: 16px;
 }
 
-.navbar{
+.sec1{
     background-color: #4A864B;
+}
+
+.navbar{
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     display: flex;
     justify-content: space-between;
     padding: 1% 4%;
+    align-items: center;
 }
 
 .nav-left{
@@ -25,9 +29,61 @@ html{
 .nav-left ul {
     display: flex;
     list-style: none;
+    align-items: center;
+    margin: 0 2%;
+    justify-content: space-around;
+    width: 100%;
 }
+ .nav-left ul a li{
+    padding: 10px;
+    transition: all .5s ease-in-out;
+ }
 
-.nav-left ul li{
-    padding: 0 4%;
-    margin: 0 5%;
-}
+ .nav-left ul a li:hover{
+    color: rgb(187, 186, 186);
+ }
+
+ .nav-left ul a{
+    text-decoration: none;
+    color: #fff;
+ }
+
+ .nav-right button{
+    padding: 15%;
+    width: max-content;
+    border-radius: 5px;
+    border: none;
+    color: #4A864B;
+ }
+
+ .heading{
+    display: flex;
+    margin: 0 12%;
+ }
+
+ .header p{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+ }
+ 
+ .header #heading-pickle{
+    color: #F2BB13;
+    font-size: 4.5rem;
+ }
+
+ .heading .header-img{
+    position: relative;
+ }
+
+ .heading .header-img #bg{
+    position: absolute;
+    z-index: 0;
+    right: -9%;
+    top: -14%;
+ }
+
+ .heading .header-img #h-img{
+    position: relative;
+    z-index: 1;
+ }
