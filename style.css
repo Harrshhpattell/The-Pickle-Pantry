@@ -10,10 +10,8 @@ html{
 }
 
 .sec1{
-    background-color: #1C431E;
-}
-
-.top{
+    overflow: hidden;
+    border-radius: 0 0 50% 50%;
     background-color: #4A864B;
 }
 
@@ -62,8 +60,11 @@ html{
 
  .heading{
     display: flex;
-    margin: 0 13%;
+    margin: 0 15%;
+    align-items: center;
  }
+
+ 
 
  .header p{
     font-size: 3.5rem;
@@ -83,11 +84,22 @@ html{
  .heading .header-img #bg{
     position: absolute;
     z-index: 0;
-    right: -9%;
-    top: -14%;
+    right: -10%;
+    top: -16%;
+    width: 500px;
  }
 
  .heading .header-img #h-img{
     position: relative;
     z-index: 1;
+    width: 400px;
  }
+
+.sec2{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #1C431E;
+    height: 700px;
+    z-index: -1;
+}
