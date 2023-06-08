@@ -10,6 +10,10 @@ html{
 }
 
 .sec1{
+    background-color: #1C431E;
+}
+
+.top{
     background-color: #4A864B;
 }
 
@@ -58,7 +62,7 @@ html{
 
  .heading{
     display: flex;
-    margin: 0 12%;
+    margin: 0 13%;
  }
 
  .header p{
