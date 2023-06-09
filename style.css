@@ -41,7 +41,18 @@ html{
     overflow: hidden;
     border-radius: 0 0 50% 50%;
     background-color: #4A864B;
+    animation: circle 2s ease-out;
 }
+@keyframes circle {
+   0%{
+      opacity: 0;
+     border-radius: 0 0 10% 10%;
+   }
+   100% {
+     opacity: 1;
+     border-radius: 0 0 50% 50%;
+   }
+ }
 
 .navbar{
     font-family: 'Montserrat', sans-serif;
@@ -69,7 +80,7 @@ html{
  .burger1 span {
    display: block;
    position: absolute;
-   height: 4px;
+   height: 2px;
    width: 100%;
    background: rgb(255, 255, 255);
    border-radius: 9px;
@@ -88,7 +99,7 @@ html{
  
  .burger1 span:nth-of-type(2) {
    top: 50%;
-   transform: translateY(-50%);
+   transform: translateY(-40%);
    transform-origin: center left;
  }
  
@@ -98,7 +109,7 @@ html{
    left: 10%;
    right: 10%;
    transform-origin: center left;
-   transform: translateY(-100%);
+   transform: translateY(-90%);
  }
  
  .burger1 input:checked ~ span:nth-of-type(1) {
@@ -198,6 +209,15 @@ html{
     right: -25%;
     top: -16%;
     width: 30rem;
+    animation: infintcircle 60s infinite linear;
+ }
+ @keyframes infintcircle {
+   from {
+     transform: rotate(0);
+   }
+   to {
+     transform: rotate(360deg);
+   }
  }
 
  .heading .header-img #h-img{
