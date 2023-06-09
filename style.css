@@ -414,22 +414,83 @@ html{
  
  .sec5 .background-image {
    position: absolute;
-    top: 24rem;
-    opacity: 0.4;
+    top: 2rem;
+    opacity: 0.2;
  }
 
  .sec5 .background-image img{
    width: 20rem;
  }
 
- .sec5 .chooseUs {
+ .sec5 h1{
    padding: 3rem 0;
- }
-
- .sec5 .chooseUs h1{
    font-size: 2.5rem;
    color: #537256;
    text-align: center;
+ }
+
+ .sec5 .chooseUs img{
+   width: 25rem;
+   height: 25rem;
+ }
+
+ .sec5 .chooseUs{
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .sec5 .chooseUs .sec5-about{
+   padding:0 3rem 5rem 3rem;
+ }
+
+ .sec5 .chooseUs .sec5-about h2{
+   color: #4A854B;
+ }
+
+ .sec5 .chooseUs .sec5-about p{
+   color: #112712;
+ }
+
+ .sec5 .chooseUs .first{
+   position: relative;
+   right: -2rem;
+ }
+
+ .sec5 .chooseUs .second{
+   position: relative;
+   left: -2rem;
+ }
+
+ .sec5 .view-btn{
+   text-align: center;
+ }
+
+ .sec5 .view-btn .view-more-btn{
+   background-color: #4A854B;
+   color: #fff;
+   padding: 0.7rem 1.2rem;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 1.2rem;
+   width: fit-content;
+   margin: 3% 0;
+ }
+
+ .sec5 .last-img #f{
+   position: absolute;
+   bottom: -6rem;
+   width: 15rem;
+   left: 0;
+ }
+
+ .sec5 .last-img #l{
+   position: absolute;
+   bottom: 0;
+   width: 15rem;
+   right: 0;
  }
 
 @media (max-width:750px){
@@ -482,6 +543,9 @@ html{
 .sec4 .flavour hr{
    height: 7rem;
 }
+.sec5 .background-image img{
+   display: none;
+ }
 }
 
 @media (max-width: 650px){
@@ -512,6 +576,10 @@ html{
    left: 15%;
  }
 
+ .sec5 .view-btn .view-more-btn{
+   margin: 6% 0;
+ }
+
 }
 
 @media (max-width: 400px){
@@ -520,5 +588,19 @@ html{
    }
    .mango{
       left: 10%;
+    }
+    .sec5 .chooseUs img{
+      width: 18rem;
+      height: 18rem;
+    }
+    .sec5 .chooseUs .sec5-about{
+      padding:0 1rem 3rem 1rem;
+    }
+    .sec5 .last-img #f{
+      width: 10rem;
+    }
+   
+    .sec5 .last-img #l{
+      width: 10rem;
     }
 }
