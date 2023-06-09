@@ -33,6 +33,10 @@ html{
    }
 }
 
+.outer-sec1{
+   position: relative;
+}
+
 .sec1{
     overflow: hidden;
     border-radius: 0 0 50% 50%;
@@ -203,24 +207,37 @@ html{
     top: 2rem;
  }
 
+ .mango{
+   display: flex;
+   position: absolute;
+   top: 25rem;
+   left: 23%;
+   z-index: 2;
+ }
+
+ .mango img{
+   width: 20rem;
+ }
+
 .sec2{
     top: 0;
     position: absolute;
     width: 100%;
     background-color: #1C431E;
-    height: 700px;
+    height: 44rem;
     z-index: -1;
 }
 
 .sec2 .dote{
-    margin-top: 389px;
-    width: 48px;
-    margin-left: 1%;
+   position: relative;
+   width: 48px;
+   margin-left: 1%;
+   bottom: -35rem;
 }
 
 .sec2 .dote hr{
     margin-bottom: 4%;
-    border: 8px dotted #4A864B;
+    border: 0.5rem dotted #4A864B;
     border-bottom: none;
     border-left: none;
     border-right: none;
@@ -278,4 +295,16 @@ html{
    .sec1{
       border-radius: 0 0 20% 20%;
   }
+  .mango{
+   left: 15%;
+ }
+}
+
+@media (max-width: 400px){
+   .mango img{
+      width: 15rem;
+   }
+   .mango{
+      left: 10%;
+    }
 }
