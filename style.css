@@ -260,4 +260,22 @@ html{
    .nav-left .MENU-1{
       display: block;
    }
+   .sec1{
+      border-radius: 0 0 30% 30%;
+  }
+}
+
+@media (max-width: 650px){
+   .heading{
+      margin: 2rem 2rem;
+   }
+   .header p{
+      font-size: 2.5rem;
+   }
+   .header #heading-pickle{
+      font-size: 4rem;
+   }
+   .sec1{
+      border-radius: 0 0 20% 20%;
+  }
 }
