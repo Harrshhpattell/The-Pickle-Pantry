@@ -57,20 +57,20 @@
             <hr>
         </div>
         </section>
+        <script>
+            const burger = document.getElementById('burger1');
+            const navMenu = document.querySelector('.nav-left ul');
+            
+            burger.addEventListener('change', function() {
+              if (this.checked) {
+                navMenu.style.top = '0%';
+              } else {
+                navMenu.style.top = '-100%';
+              }
+            });
+            
+            </script>
 </body>
 </html>
 
 
-<script>
-const burger = document.getElementById('burger1');
-const navMenu = document.querySelector('ul');
-
-burger.addEventListener('change', function() {
-  if (this.checked) {
-    navMenu.classList.add("open-menu");
-  } else {
-    navMenu.classList.remove("open-menu");
-  }
-});
-
-</script>

@@ -251,13 +251,13 @@ html{
       top: -100%;
       z-index: 10;
       padding: 2% 0;
+      transition: all .8s ease-in-out;
+   }
+   .nav-left ul a{
+      display: inline-block;
+      margin: 0 40%;
    }
    .nav-left .MENU-1{
       display: block;
    }
-   .menu-open{
-      top: 0;
-   } 
-
 }
-
