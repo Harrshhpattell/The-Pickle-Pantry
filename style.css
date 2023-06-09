@@ -9,6 +9,30 @@ html{
     font-size: 16px;
 }
 
+@media (max-width:1500px){
+   html{
+      font-size: 14px;
+   }
+}
+
+@media (max-width:1204px){
+   html{
+      font-size: 12px;
+   }
+}
+
+@media (max-width:1000px){
+   html{
+      font-size: 10px;
+   }
+}
+
+@media (max-width:850px){
+   html{
+      font-size: 8px;
+   }
+}
+
 .sec1{
     overflow: hidden;
     border-radius: 0 0 50% 50%;
@@ -24,8 +48,83 @@ html{
     align-items: center;
 }
 
+ .burger1 {
+   position: relative;
+   width: 40px;
+   height: 30px;
+   background: transparent;
+   cursor: pointer;
+   display: block;
+   margin: auto;
+ }
+ 
+ .burger1 input {
+   display: none;
+ }
+ 
+ .burger1 span {
+   display: block;
+   position: absolute;
+   height: 4px;
+   width: 100%;
+   background: rgb(255, 255, 255);
+   border-radius: 9px;
+   opacity: 1;
+   z-index: 11;
+   transition: 0.25s ease-in-out;
+ }
+ 
+ .burger1 span:nth-of-type(1) {
+   width: 80%;
+   left: 10%;
+   right: 10%;
+   top: 0px;
+   transform-origin: center left;
+ }
+ 
+ .burger1 span:nth-of-type(2) {
+   top: 50%;
+   transform: translateY(-50%);
+   transform-origin: center left;
+ }
+ 
+ .burger1 span:nth-of-type(3) {
+   top: 100%;
+   width: 80%;
+   left: 10%;
+   right: 10%;
+   transform-origin: center left;
+   transform: translateY(-100%);
+ }
+ 
+ .burger1 input:checked ~ span:nth-of-type(1) {
+   transform: rotate(45deg);
+   top: 0px;
+   width: 100%;
+   left: 5px;
+ }
+ 
+ .burger1 input:checked ~ span:nth-of-type(2) {
+   width: 0%;
+   opacity: 0;
+ }
+ 
+ .burger1 input:checked ~ span:nth-of-type(3) {
+   transform: rotate(-45deg);
+   top: 28px;
+   width: 100%;
+   left: 5px;
+ }
+ 
+
 .nav-left{
     display: flex;
+    align-items: center;
+    justify-content: space-betweens;
+}
+
+.nav-left .MENU-1{
+   display: none;
 }
 
 .nav-left ul {
@@ -38,6 +137,7 @@ html{
 }
  .nav-left ul a li{
     padding: 10px;
+    font-size: 1.2rem;
     transition: all .5s ease-in-out;
  }
 
@@ -66,7 +166,7 @@ html{
 
  .heading{
     display: flex;
-    margin: 0 15%;
+    margin: 2rem 15rem;
     align-items: center;
  }
 
@@ -76,6 +176,7 @@ html{
     font-size: 3.5rem;
     font-weight: bold;
     color: #fff;
+    margin-right: 10rem;
  }
  
  .header #heading-pickle{
@@ -90,15 +191,16 @@ html{
  .heading .header-img #bg{
     position: absolute;
     z-index: 0;
-    right: -10%;
+    right: -25%;
     top: -16%;
-    width: 500px;
+    width: 30rem;
  }
 
  .heading .header-img #h-img{
     position: relative;
     z-index: 1;
-    width: 400px;
+    width: 20rem;
+    top: 2rem;
  }
 
 .sec2{
@@ -129,3 +231,33 @@ html{
     bottom: 1%;
     right: 2%;
 }
+
+
+@media (max-width:750px){
+   .nav-right{
+      display: none;
+   }
+   .nav-left{
+      justify-content: space-between;
+      width: 100%;
+   }
+   .nav-left ul{
+      display: block;
+      position: absolute;
+      background-color: #1C431E;
+      left: 0;
+      margin: 0%;
+      text-align: center;
+      top: -100%;
+      z-index: 10;
+      padding: 2% 0;
+   }
+   .nav-left .MENU-1{
+      display: block;
+   }
+   .menu-open{
+      top: 0;
+   } 
+
+}
+

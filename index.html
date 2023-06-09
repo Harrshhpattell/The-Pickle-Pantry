@@ -11,13 +11,22 @@
     <section class="sec1" >
             <div class="navbar" >
                 <div class="nav-left" >
-                    <img src="images/The Pickle Pantry Logo.png" alt="logo" width="10%">
+                    <img src="images/The Pickle Pantry Logo.png" alt="logo" width="10%" >
+                    <div class="MENU-1">
+                        <label class="burger1" for="burger1">
+                          <input type="checkbox" id="burger1" />
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </label>
+                    </div>
                     <ul>
                         <a href="#"><li>Home</li></a>
                         <a href="#"><li>About Us</li></a>
                         <a href="#"><li>Products</li></a>
                         <a href="#"><li>Blog</li></a>
                         <a href="#"><li>Contact</li></a>
+                    </ul>
                 </div>
                 <div class="nav-right" >
                     <button>Get in Touch</button>
@@ -50,3 +59,18 @@
         </section>
 </body>
 </html>
+
+
+<script>
+const burger = document.getElementById('burger1');
+const navMenu = document.querySelector('ul');
+
+burger.addEventListener('change', function() {
+  if (this.checked) {
+    navMenu.classList.add("open-menu");
+  } else {
+    navMenu.classList.remove("open-menu");
+  }
+});
+
+</script>
