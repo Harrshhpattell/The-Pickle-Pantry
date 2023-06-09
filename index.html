@@ -1,85 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Pickle pantry</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section class="outer-sec1" >
-
-    
-    <section class="sec1" >
-            <div class="navbar" >
-                <div class="nav-left" >
-                    <img src="images/The Pickle Pantry Logo.png" alt="logo" width="10%" >
-                    <div class="MENU-1">
-                        <label class="burger1" for="burger1">
-                          <input type="checkbox" id="burger1" />
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </label>
-                    </div>
-                    <ul>
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>About Us</li></a>
-                        <a href="#"><li>Products</li></a>
-                        <a href="#"><li>Blog</li></a>
-                        <a href="#"><li>Contact</li></a>
-                    </ul>
-                </div>
-                <div class="nav-right" >
-                    <button>Get in Touch</button>
-                </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="outer-sec1">
+      <section class="sec1">
+        <div class="navbar">
+          <div class="nav-left">
+            <img
+              src="images/The Pickle Pantry Logo.png"
+              alt="logo"
+              width="10%"
+            />
+            <div class="MENU-1">
+              <label class="burger1" for="burger1">
+                <input type="checkbox" id="burger1" />
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
             </div>
-            <div class="heading" >
-                <div class="header" >
-                    <p>ANY TIME IS A GOOD TIME FOR A</p>
-                    <p id="heading-pickle" >PICKLE</p>
-                </div>
-                <div class="header-img" >
-                    <img id="h-img" src="images/Person.png" alt="">
-                    <img id="bg" src="images/bg design.png" alt="">
-                </div>
-            </div>
-            
+            <ul>
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>About Us</li></a>
+              <a href="#"><li>Products</li></a>
+              <a href="#"><li>Blog</li></a>
+              <a href="#"><li>Contact</li></a>
+            </ul>
+          </div>
+          <div class="nav-right">
+            <button>Get in Touch</button>
+          </div>
+        </div>
+        <div class="heading">
+          <div class="header">
+            <p>ANY TIME IS A GOOD TIME FOR A</p>
+            <p id="heading-pickle">PICKLE</p>
+          </div>
+          <div class="header-img">
+            <img id="h-img" src="images/Person.png" alt="" />
+            <img id="bg" src="images/bg design.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <div class="mango">
+        <img style="transform: rotate(-14deg)" src="images/Vector.png" alt="" />
+        <img src="images/mango.png" alt="" />
+      </div>
     </section>
-    <div class="mango">
-        <img style="transform: rotate(-14deg);" src="images/Vector.png" alt="">
-        <img src="images/mango.png" alt="">
-    </div>
-</section>
+    <!-- section-1 END  -->
+    <!-- section-2 START -->
     <section class="sec2">
-        <div class="dote">
-            <hr>
-            <hr>
-            <hr>
-            <hr>
+      <div class="dote">
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+      </div>
+      <div class="right-dote dote">
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+      </div>
+    </section>
+    <!-- section-2 END  -->
+    <!-- section-3 START  -->
+    <section class="sec3">
+        <div class="product">
+            <h1>Our Products</h1>
+            <div class="all-product">
+                <div>
+                    
+                </div>
+            </div>
         </div>
-        <div class="right-dote dote">
-            <hr>
-            <hr>
-            <hr>
-            <hr>
-        </div>
-        </section>
-        <script>
-            const burger = document.getElementById('burger1');
-            const navMenu = document.querySelector('.nav-left ul');
-            
-            burger.addEventListener('change', function() {
-              if (this.checked) {
-                navMenu.style.top = '0%';
-              } else {
-                navMenu.style.top = '-100%';
-              }
-            });
-            
-            </script>
-</body>
+    </section>
+
+    <script>
+      const burger = document.getElementById("burger1");
+      const navMenu = document.querySelector(".nav-left ul");
+
+      burger.addEventListener("change", function () {
+        if (this.checked) {
+          navMenu.style.top = "0%";
+        } else {
+          navMenu.style.top = "-100%";
+        }
+      });
+    </script>
+  </body>
 </html>
-
-

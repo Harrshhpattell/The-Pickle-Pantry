@@ -35,6 +35,7 @@ html{
 
 .outer-sec1{
    position: relative;
+   margin-bottom: 17rem;
 }
 
 .sec1{
@@ -269,6 +270,13 @@ html{
     right: 2%;
 }
 
+/* section2 end here  */
+.sec3 .product h1{
+   font-size: 2rem;
+   color: #537256;
+   text-align: center;
+}
+
 
 @media (max-width:750px){
    .nav-right{
@@ -299,7 +307,18 @@ html{
    }
    .sec1{
       border-radius: 0 0 30% 30%;
+      animation: circle 2s ease-out;
   }
+  @keyframes circle {
+   0%{
+      opacity: 0;
+     border-radius: 0 0 5% 5%;
+   }
+   100% {
+     opacity: 1;
+     border-radius: 0 0 30% 30%;
+   }
+ }
 }
 
 @media (max-width: 650px){
@@ -314,7 +333,18 @@ html{
    }
    .sec1{
       border-radius: 0 0 20% 20%;
+      animation: circle 2s ease-out;
   }
+  @keyframes circle {
+   0%{
+      opacity: 0;
+     border-radius: 0 0 0% 0%;
+   }
+   100% {
+     opacity: 1;
+     border-radius: 0 0 20% 20%;
+   }
+ }
   .mango{
    left: 15%;
  }
