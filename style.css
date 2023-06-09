@@ -271,7 +271,7 @@ html{
     right: 2%;
 }
 
-/* section2 end here  */
+/* ----------------------------------section2 end here-------------------  */
 
 
 .sec3 .product{
@@ -340,10 +340,11 @@ html{
    border-radius: 5px;
    cursor: pointer;
 }
-/* section3 end here  */
+/* -------------------------section3 end here----------------------------  */
 
 .sec4{
-   padding: 6rem 0;
+   padding-top: 6rem;
+   overflow: hidden;
 }
 
 .sec4 .flavour{
@@ -361,6 +362,8 @@ html{
 
 .sec4 .flavour .side{
    width: 10%;
+   position: relative;
+   bottom: -25px;
 }
 
 .sec4 .flavour .flav{
@@ -388,6 +391,32 @@ html{
    color: #537256;
    text-align: center;
 }
+/* -------------------section4 end here--------------------------- */
+
+.sec5 {
+   position: relative;
+   background-color: #EBE7DB;
+ }
+ 
+ .sec5 .background-image {
+   position: absolute;
+    top: 24rem;
+    opacity: 0.4;
+ }
+
+ .sec5 .background-image img{
+   width: 20rem;
+ }
+
+ .sec5 .chooseUs {
+   padding: 3rem 0;
+ }
+
+ .sec5 .chooseUs h1{
+   font-size: 2.5rem;
+   color: #537256;
+   text-align: center;
+ }
 
 @media (max-width:750px){
    .nav-right{
@@ -432,6 +461,9 @@ html{
  }
  .sec4 .flavour .sec4-side-img{
    width: 6rem;
+}
+.sec4 .flavour .side{
+   bottom: -10px;
 }
 .sec4 .flavour hr{
    height: 7rem;
