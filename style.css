@@ -199,7 +199,17 @@ html{
  .header #heading-pickle{
     color: #F2BB13;
     font-size: 4.5rem;
+    animation: text-shadow-drop 1s linear 0s 1 normal forwards;
  }
+ @keyframes text-shadow-drop {
+			
+   0% {
+      text-shadow:0 0 0 transparent;
+   }
+   100% {
+      text-shadow:-6px 6px 18px rgba(0,0,0,.35);
+   }
+}
 
  .heading .header-img{
     position: relative;
@@ -352,6 +362,10 @@ html{
    justify-content: center;
    align-items: center;
    text-align: center;
+}
+
+.sec4 .flavour p{
+   font-size: 1.2rem;
 }
 
 .sec4 .flavour .sec4-side-img{
