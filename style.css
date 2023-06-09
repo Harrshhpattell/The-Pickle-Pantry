@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 *{
     padding: 0;
     margin: 0%;
@@ -275,6 +276,58 @@ html{
    font-size: 2rem;
    color: #537256;
    text-align: center;
+}
+
+
+.sec3 .product .all-product .perticular-product .img-div{
+   text-align: center;
+   margin: 3px;
+   height: 15rem;
+}
+
+.sec3 .product .all-product .perticular-product .img-div img{
+   width: 13rem;
+}
+
+.sec3 .product .all-product .perticular-product h2{
+   color: #4A864B;
+   font-family: 'Chakra Petch', sans-serif;
+   font-size: 1.5rem;
+}
+
+.sec3 .product .all-product{
+   display: flex;
+   justify-content: center;
+   margin: 2% 0;
+   flex-wrap: wrap;
+}
+
+.sec3 .product .all-product .perticular-product p{
+   font-size: 1.3rem;
+}
+
+.sec3 .product .all-product .perticular-product{
+   border-radius: 5px;
+   box-shadow: 0px 0px 20px 10px #F7F7F7;
+   margin: 1%;
+   width: 15rem;
+}
+
+.sec3 .product .all-product .perticular-product .pro-detail{
+   text-align: center;
+   line-height: 200%;
+   padding: 5% 0
+}
+
+.sec3 .product .all-product .perticular-product .buyNow-btn{
+   padding: 0.7rem 1.2rem;
+    width: max-content;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: #4A854B;
 }
 
 
