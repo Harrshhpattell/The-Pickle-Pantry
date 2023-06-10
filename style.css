@@ -370,6 +370,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 2rem 0;
 }
 
 .sec4 .flavour p {
@@ -383,7 +384,7 @@ html {
 .sec4 .flavour .side {
   width: 10%;
   position: relative;
-  bottom: -25px;
+  bottom: -55px;
 }
 
 .sec4 .flavour .flav {
@@ -609,7 +610,7 @@ html {
     width: 6rem;
   }
   .sec4 .flavour .side {
-    bottom: -10px;
+   bottom: -27px;
   }
   .sec4 .flavour hr {
     height: 7rem;
@@ -684,9 +685,10 @@ html {
     width: 10rem;
   }
   .sec6 .sec6-cointainer {
-    margin: 0;
-    padding: 2rem;
-    flex-wrap: wrap-reverse;
+   margin: 0px;
+   font-size: 1.5rem;
+   padding: 2rem 0rem;
+   flex-wrap: wrap-reverse;
   }
   .sec6 .sec6-cointainer img {
     width: 35rem;
