@@ -8,6 +8,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 1500px) {
@@ -696,4 +697,43 @@ html {
     height: 25rem;
     padding: 2rem 0;
   }
+}
+
+.reveal {
+  transform: translateY(150px);
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.left_ani {
+  transform: translatex(-250px);
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 2s ease;
+}
+
+.left_ani.fromleft {
+  transform: translateY(0px);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.right_ani {
+  transform: translatex(250px);
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 2s ease;
+}
+
+.right_ani.fromright {
+  transform: translateY(0px);
+  opacity: 1;
+  filter: blur(0);
 }
