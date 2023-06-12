@@ -11,6 +11,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 @media (max-width: 1500px) {
   html {
     font-size: 14px;
