@@ -11,12 +11,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html,
-body {
-  overflow-x: hidden;
-  max-zoom: 1;
-}
-
 @media (max-width: 1500px) {
   html {
     font-size: 14px;
@@ -628,6 +622,11 @@ body {
   }
   .sec6 .sec6-cointainer {
     margin: 0 5rem;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+    max-zoom: 1;
   }
 }
 
