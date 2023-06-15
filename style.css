@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
 * {
   padding: 0;
-  margin: 0%;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -623,11 +623,6 @@ html {
   .sec6 .sec6-cointainer {
     margin: 0 5rem;
   }
-  html,
-  body {
-    overflow-x: hidden;
-    max-zoom: 1;
-  }
 }
 
 @media (max-width: 650px) {
@@ -717,28 +712,3 @@ html {
   filter: blur(0);
 }
 
-.left_ani {
-  transform: translatex(-250px);
-  opacity: 0;
-  filter: blur(5px);
-  transition: all 2s ease;
-}
-
-.left_ani.fromleft {
-  transform: translateY(0px);
-  opacity: 1;
-  filter: blur(0);
-}
-
-.right_ani {
-  transform: translatex(250px);
-  opacity: 0;
-  filter: blur(5px);
-  transition: all 2s ease;
-}
-
-.right_ani.fromright {
-  transform: translateY(0px);
-  opacity: 1;
-  filter: blur(0);
-}
