@@ -193,11 +193,11 @@
             <h2>Lorem</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
           </div>
-          <div class="sec5-about left_ani">
+          <div class="sec5-about">
             <h2>Lorem</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
           </div>
-          <div class="sec5-about first left_ani">
+          <div class="sec5-about first">
             <h2>Lorem</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
           </div>
@@ -210,11 +210,11 @@
             <h2>Lorem</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
           </div>
-          <div class="sec5-about right_ani">
+          <div class="sec5-about">
             <h2>Lorem</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
           </div>
-          <div class="sec5-about second right_ani">
+          <div class="sec5-about second">
             <h2>Lorem</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
           </div>
@@ -286,6 +286,23 @@
             reveals[i].classList.add("active");
           } else {
             reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", left_ani);
+      function left_ani() {
+        var reveals = document.querySelectorAll(".left_ani");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("fromleft");
+          } else {
+            reveals[i].classList.remove("fromleft");
           }
         }
       }
